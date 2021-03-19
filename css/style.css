@@ -1,0 +1,131 @@
+/*Variables*/
+:root {
+  --busy: lightblue;
+  --unavab: #bfbfbf;
+}
+
+/*Dont show scrollbar, if there is one*/
+::-webkit-scrollbar{
+  display: none;
+}
+
+/*Table cells showing grid*/
+tr td:not(:first-of-type){
+  border-left: #808080 solid 1px;
+  border-bottom: #808080 solid 1px;
+  padding: 1px !important;
+  background-image:repeating-linear-gradient(90deg, lightgray, lightgray, transparent 1px, transparent 26%);
+  position: static;
+  overflow: visible;
+  table-layout: fixed;
+}
+
+/*Common properties for all divs*/
+.booking{
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  text-align: center;
+  height: 33px;
+  position: relative;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+/*Place to write in last update info*/
+.last_update{
+  max-width: 250px;
+  overflow: visible;
+  white-space: nowrap;
+  padding: 7px;
+  padding-left: 15px;
+  color: #4d4d4d;
+}
+
+.wrap-table100{
+    width:95% !important;       /*Width of the table*/
+}
+
+table tbody tr{
+    height: 1px !important;     /*Minimum TR height*/
+}
+
+/*Fix right border overlap*/
+table tbody tr td:last-of-type{
+  border-right: #808080 solid 2px;
+}
+
+/*Column with resource names*/
+.resource_td{
+  text-align:center;
+  width: 1px !important;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*Resource names colors*/
+.pink{
+  color: #e557a0;}
+.blue{
+  color: #00aeef;}
+.yellow{
+  color: #e0ba00;}
+
+/*Resources not available*/
+.unavailable_resource .pink{
+	background-color: var(--unavab);
+	border-radius: 15px;
+	width: 95px;
+	margin: auto;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+/*Resources not available*/
+.unavailable_resource .blue{
+	background-color: var(--unavab);
+	border-radius: 15px;
+	width: 180px;
+	margin: auto;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+/*Part of legend containing color and meaning of the color*/
+/*Common properties*/
+#legend p{
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+}
+
+#busy{
+  background-color: var(--busy);}
+#unavailable{
+  background-color: var(--unavab);}
+
+th{
+  font-weight: bold !important;
+}
+
+/*Vertical centering table*/
+.container-table100{
+  max-height: 100vh !important;
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
+}
+
+.last_update{  
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.container-table100 {
+  background: -webkit-linear-gradient(45deg, #4158d0, #f5f5ef);
+  background: -o-linear-gradient(45deg, #4158d0, #f5f5ef);
+  background: -moz-linear-gradient(45deg, #4158d0, #f5f5ef);
+  background: linear-gradient(45deg, #baba91, #e2e2d0) !important;
+}
