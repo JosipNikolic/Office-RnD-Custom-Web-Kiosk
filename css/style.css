@@ -72,23 +72,23 @@ table tbody tr td:last-of-type{
   color: #e0ba00;}
 
 /*Resources not available*/
-.unavailable_resource .pink{
+/*.unavailable_resource .pink{
 	background-color: var(--unavab);
 	border-radius: 15px;
 	width: 95px;
 	margin: auto;
 	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
-
+*/
 /*Resources not available*/
-.unavailable_resource .blue{
+/*.unavailable_resource .blue{
 	background-color: var(--unavab);
 	border-radius: 15px;
 	width: 180px;
 	margin: auto;
 	text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
-
+*/
 /*Part of legend containing color and meaning of the color*/
 /*Common properties*/
 #legend p{
