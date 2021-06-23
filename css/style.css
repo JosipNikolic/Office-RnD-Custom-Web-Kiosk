@@ -105,7 +105,8 @@ table tbody tr td:last-of-type{
 #busy{
   background-color: var(--busy);}
 #unavailable{
-  background-color: var(--unavab);}
+  background-color: var(--unavab);
+  visibility: hidden;}
 
 th{
   font-weight: bold !important;
